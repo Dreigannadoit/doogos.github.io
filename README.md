@@ -1,4 +1,5 @@
-<h1><a href="https://dreigannadoit.github.io/doogos.github.io/">doogos.github.io</a></h1>
+<h1>doogos.github.io</h1>
+[Link](https://dreigannadoit.github.io/doogos.github.io/).
 
 <p>This website displays some of my programming capabilities with vanila javascript and pure css</p>
 <p>This project was a requirement for my subject of Fundamentals of Computing.</p>
