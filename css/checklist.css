@@ -1,0 +1,92 @@
+.checklist::-webkit-scrollbar {
+    width: 20px;
+}
+
+.checklist{
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    z-index: 999999;
+    height: 60%;
+    width: 60%;
+    opacity: 0;
+    background-color: white;
+    box-shadow: -10px 5px 29px 7px rgba(0,0,0,0.3);
+    padding: 4% 4%;
+    border-radius: 15px;
+
+    transition: all 500ms ease;
+}
+
+
+.checklist.active{
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+}
+
+.checklist .container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    padding-right: 5%;
+}
+
+.checklist .container .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checklist .container .head button{
+    font-size: 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.checklist .container table{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.checklist .container table tr {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-top: 1px solid black;
+}
+
+.checklist .container table tr th,
+.checklist .container table tr td{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.checklist .container table tr th:nth-child(1),
+.checklist .container table tr td:nth-child(1){
+    width: 10%;
+}
+
+.checklist .container table tr th:nth-child(2),
+.checklist .container table tr td:nth-child(2){
+    width: 60%;
+}
+.checklist .container table tr td:nth-child(2){
+    font-style: italic;
+}
+
+.checklist .container table tr th:nth-child(3),
+.checklist .container table tr td:nth-child(3){
+    width: 20%;
+}
+.checklist .container table tr td:nth-child(3){
+    font-weight: 900;
+    align-items: flex-end;
+}
