@@ -1,5 +1,5 @@
 <h1>doogos.github.io</h1>
-<https://dreigannadoit.github.io/doogos.github.io/>.
+https://dreigannadoit.github.io/doogos.github.io/
 
 <p>This website displays some of my programming capabilities with vanila javascript and pure css</p>
 <p>This project was a requirement for my subject of Fundamentals of Computing.</p>
