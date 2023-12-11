@@ -11,3 +11,10 @@ https://dreigannadoit.github.io/doogos.github.io/
   <li>Make navbar responsive</li>
   <li>Make footer responsive</li>
 </ul>
+
+<ul>
+  <h3>Fixes</h3>
+  <li>Changed Ownwers to Owner</li>
+  <li>Fixed fnaf easter egg error</li>
+  <li>fnaf easter egg sound</li>
+</ul>
