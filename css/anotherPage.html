@@ -1,0 +1,300 @@
+<!-- By Robert Andrei N. Bamba -->
+<!--
+    Design Concept Inspired From:
+    https://www.bukwild.com
+    https://www.madetogether.com.au
+    dreigannadoit.github.io/
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Aint no way they this cute</title>
+     <link rel="icon" type="image/png" href="./img/logo-light.svg"/>
+ 
+     <!-- style -->
+     <link rel="stylesheet" href="./style.css">
+     <link rel="stylesheet" href="./nav.css">
+     <link rel="stylesheet" href="./footer.css">
+     <link rel="stylesheet" href="./anotherPageMain.css">
+ 
+     <!-- fonts and icons -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ 
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ </head>
+ <body id="body">
+ 
+    <div class="wrapper" id="wrapper">
+ 
+        <div class="nav" id="nav">
+             <div class="nav_container">
+                 <div class="logo">
+                     <img src="../img/logo.svg" alt="logo.img">
+                 </div>
+ 
+                 <div class="title">
+                     <span id="titleHead">Drei Abmab</span>
+                     <hr>
+                 </div>
+                 
+                 <div class="ham">
+                     <div class="ham_container" id="openMenu">
+                         <div></div>
+                         <div></div>
+                         <div></div>
+                     </div>
+                 </div>
+             </div>
+             
+             <div class="backdrop"></div>
+             <nav class="nav_menu">
+                 <div class="menu">
+                     <ul>
+                         <li>
+                             <h1>Nioce</h1>
+                         </li>
+                         <li>
+                             <a href="../index.html#body" onclick="openMenu()">Hero Page</a>
+                         </li>
+ 
+                         <li>
+                             <a href="../index.html#s3" onclick="openMenu()">Meet the Dogs</a>
+                         </li>
+ 
+                         <li>
+                             <a href="../index.html#s4" onclick="openMenu()">Meet the Owner</a>
+                         </li>
+ 
+                         <li>
+                             <a href="../index.html#s5" onclick="openMenu()">Gallery</a>
+                         </li>
+                     </ul>
+                 </div>
+ 
+                 <div class="links">
+                     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=robertandrei.bamba@g.msuiit.edu.ph&su=SUBJECT&body=BODY" target="_blank">Email</a>
+                     <a href="https://www.facebook.com/drei.abmab" target="_blank">Facebook</a>
+                 </div>
+             </nav>
+        </div>
+ 
+        <div class="content" id="content">
+            <header class="a-s1">
+                <div class="containers">
+                    <div class="binary-container">
+                      <div class="binary">0000000000</div>
+                      <button class="play"></button>
+                    </div>
+              
+                    <div class="editor-container open">
+              
+                      <div class="info">
+                          <h1>Customize Notes<span>||</span>Learn About This</h1>
+                      </div>
+              
+                      <div class="editor-container-contents">
+                   
+                          <div class="notes">
+                              <input readonly data-index="0"/>
+                              <input readonly data-index="1"/>
+                              <input readonly data-index="2"/>
+                              <input readonly data-index="3"/>
+                              <input readonly data-index="4"/>
+                              <input readonly data-index="5"/>
+                              <input readonly data-index="6"/>
+                              <input readonly data-index="7"/>
+                              <input readonly data-index="8"/>
+                              <input readonly data-index="9"/>
+                          </div>
+              
+                          <div class="piano">
+                            <ul id="piano-keyboard">
+                              <li class="piano-key white" data-piano-key="A0"></li>
+                              <li class="piano-key black" data-piano-key="A#0"></li>
+                              <li class="piano-key white" data-piano-key="B0"></li>
+                              <li class="piano-key white" data-piano-key="C1"></li>
+                              <li class="piano-key black" data-piano-key="C#1"></li>
+                              <li class="piano-key white" data-piano-key="D1"></li>
+                              <li class="piano-key black" data-piano-key="D#1"></li>
+                              <li class="piano-key white" data-piano-key="E1"></li>
+                              <li class="piano-key white" data-piano-key="F1"></li>
+                              <li class="piano-key black" data-piano-key="F#1"></li>
+                              <li class="piano-key white" data-piano-key="G1"></li>
+                              <li class="piano-key black" data-piano-key="G#1"></li>
+              
+                              <li class="piano-key white" data-piano-key="A1"></li>
+                              <li class="piano-key black" data-piano-key="A#1"></li>
+                              <li class="piano-key white" data-piano-key="B1"></li>
+                              <li class="piano-key white" data-piano-key="C2"></li>
+                              <li class="piano-key black" data-piano-key="C#2"></li>
+                              <li class="piano-key white" data-piano-key="D2"></li>
+                              <li class="piano-key black" data-piano-key="D#2"></li>
+                              <li class="piano-key white" data-piano-key="E2"></li>
+                              <li class="piano-key white" data-piano-key="F2"></li>
+                              <li class="piano-key black" data-piano-key="F#2"></li>
+                              <li class="piano-key white" data-piano-key="G2"></li>
+                              <li class="piano-key black" data-piano-key="G#2"></li>
+              
+                              <li class="piano-key white" data-piano-key="A2"></li>
+                              <li class="piano-key black" data-piano-key="A#2"></li>
+                              <li class="piano-key white" data-piano-key="B2"></li>
+                              <li class="piano-key white" data-piano-key="C3"></li>
+                              <li class="piano-key black" data-piano-key="C#3"></li>
+                              <li class="piano-key white" data-piano-key="D3"></li>
+                              <li class="piano-key black" data-piano-key="D#3"></li>
+                              <li class="piano-key white" data-piano-key="E3"></li>
+                              <li class="piano-key white" data-piano-key="F3"></li>
+                              <li class="piano-key black" data-piano-key="F#3"></li>
+                              <li class="piano-key white" data-piano-key="G3"></li>
+                              <li class="piano-key black" data-piano-key="G#3"></li>
+              
+                              <li class="piano-key white" data-piano-key="A3"></li>
+                              <li class="piano-key black" data-piano-key="A#3"></li>
+                              <li class="piano-key white" data-piano-key="B3"></li>
+                              <li class="piano-key white" data-piano-key="C4"></li>
+                              <li class="piano-key black" data-piano-key="C#4"></li>
+                              <li class="piano-key white" data-piano-key="D4"></li>
+                              <li class="piano-key black" data-piano-key="D#4"></li>
+                              <li class="piano-key white" data-piano-key="E4"></li>
+                              <li class="piano-key white" data-piano-key="F4"></li>
+                              <li class="piano-key black" data-piano-key="F#4"></li>
+                              <li class="piano-key white" data-piano-key="G4"></li>
+                              <li class="piano-key black" data-piano-key="G#4"></li>
+              
+                              <li class="piano-key white" data-piano-key="A4"></li>
+                              <li class="piano-key black" data-piano-key="A#4"></li>
+                              <li class="piano-key white" data-piano-key="B4"></li>
+                              <li class="piano-key white" data-piano-key="C5"></li>
+                              <li class="piano-key black" data-piano-key="C#5"></li>
+                              <li class="piano-key white" data-piano-key="D5"></li>
+                              <li class="piano-key black" data-piano-key="D#5"></li>
+                              <li class="piano-key white" data-piano-key="E5"></li>
+                              <li class="piano-key white" data-piano-key="F5"></li>
+                              <li class="piano-key black" data-piano-key="F#5"></li>
+                              <li class="piano-key white" data-piano-key="G5"></li>
+                              <li class="piano-key black" data-piano-key="G#5"></li>
+              
+                              <li class="piano-key white" data-piano-key="A5"></li>
+                              <li class="piano-key black" data-piano-key="A#5"></li>
+                              <li class="piano-key white" data-piano-key="B5"></li>
+                              <li class="piano-key white" data-piano-key="C6"></li>
+                              <li class="piano-key black" data-piano-key="C#6"></li>
+                              <li class="piano-key white" data-piano-key="D6"></li>
+                              <li class="piano-key black" data-piano-key="D#6"></li>
+                              <li class="piano-key white" data-piano-key="E6"></li>
+                              <li class="piano-key white" data-piano-key="F6"></li>
+                              <li class="piano-key black" data-piano-key="F#6"></li>
+                              <li class="piano-key white" data-piano-key="G6"></li>
+                              <li class="piano-key black" data-piano-key="G#6"></li>
+              
+                              <li class="piano-key white" data-piano-key="A6"></li>
+                              <li class="piano-key black" data-piano-key="A#6"></li>
+                              <li class="piano-key white" data-piano-key="B6"></li>
+                              <li class="piano-key white" data-piano-key="C7"></li>
+                              <li class="piano-key black" data-piano-key="C#7"></li>
+                              <li class="piano-key white" data-piano-key="D7"></li>
+                              <li class="piano-key black" data-piano-key="D#7"></li>
+                              <li class="piano-key white" data-piano-key="E7"></li>
+                              <li class="piano-key white" data-piano-key="F7"></li>
+                              <li class="piano-key black" data-piano-key="F#7"></li>
+                              <li class="piano-key white" data-piano-key="G7"></li>
+                              <li class="piano-key black" data-piano-key="G#7"></li>
+              
+                              <li class="piano-key white" data-piano-key="A7"></li>
+                              <li class="piano-key black" data-piano-key="A#7"></li>
+                              <li class="piano-key white" data-piano-key="B7"></li>
+                              <li class="piano-key white" data-piano-key="C8"></li>
+              
+                            </ul>
+                          </div>
+              
+                          <div class="details">
+                            <p>This part of the project was inspired by the briliant <a href="http://tholman.com" target="_blank">Tim Holman</a> and a project he did similar to this. <a href="https://binarypiano.com " target="_blank">Check it out his project!</a></p>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </header>
+ 
+            <footer id="footer">
+                 <div class="footer-container">
+                    <div class="footer-nav">
+                         <ul>
+                             <li><a href="../index.html#s1">hero page</a></li>
+                             <li><a href="../index.html#s3">meet the dogs</a></li>
+                             <li><a href="../index.html#s4">meet the owners</a></li>
+                             <li><a href="../index.html#s5">gallery</a></li>
+                             <li><a href="../app.html">Meet the Fam</a></li>
+                         </ul>
+                    </div>
+ 
+                    <div class="mid">
+                         <div class="about">
+                             <div class="con">
+                                 <h1>Meet the Doggos</h1>
+                                 <p>
+                                     Each with their unique charm, these furballs bring joy, loyalty, and a whole lot of wagging tails to our lives
+                                     <span class="botdotbottwo"></span>
+                                 </p>
+                             </div>
+ 
+                             <div class="link">
+                                 <a href="../index.html#s3">
+                                     Read More
+                                     <div>
+                                         <i class="fa-solid fa-sort-up"></i>
+                                         <i class="fa-solid fa-sort-up"></i>
+                                     </div>
+                                 </a>
+                             </div>
+                         </div>
+ 
+                         <div class="logo">
+                             <img src="../img/logo-light.svg" alt="">
+                             <h1>DREI ABMAB</h1>
+                         </div>
+                    </div>
+ 
+                     <hr>
+                    <div class="bottom">
+                         <div class="socials">
+                             <a href="https://www.linkedin.com/in/robert-a-b-3b56311ab/"><i class="fa-brands fa-linkedin"></i></a>
+                             <a href="https://www.facebook.com/drei.abmab"><i class="fa-brands fa-facebook"></i></a>
+                             <a href="https://youtu.be/ExgiUAlb8NQ"><i class="fa-brands fa-youtube"></i></a>
+                         </div>
+ 
+                         <div class="details">
+                             <p>Lanao Del Norte, PH</p>
+                             <p>NOV 22, 2023</p>
+                         </div>
+ 
+                         <div class="mail">
+                             <a href="https://mail.google.com/mail/?view=cm&fs=1&to=robertandrei.bamba@g.msuiit.edu.ph&su=SUBJECT&body=BODY">robertandrei.bamba@g.msuiit.edu.ph</a>
+                         </div>
+ 
+                         <div class="name">
+                             <p>Robert Andrei N. Bamba</p>
+                         </div>
+                    </div>
+                 </div>
+            </footer>
+        </div>
+    </div>
+     
+    <style>
+        body{cursor: auto;}
+        a:hover{cursor: pointer}
+        .nav .title{visibility: hidden;}
+        .content{top:0}
+        .footer-container{transform: translateY(0%);}
+    </style>
+
+    <script src='https://unpkg.com/tone@13.8.25/build/Tone.js'></script>
+    <script src='../js/binary-to-music.js'></script>
+    <script src="../js/nav.js"></script>
+ </body>
+ </html>

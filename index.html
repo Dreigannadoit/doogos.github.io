@@ -1,0 +1,620 @@
+<!-- By Robert Andrei N. Bamba -->
+<!--
+    Design Concept Inspired From:
+    https://www.bukwild.com
+    https://www.madetogether.com.au
+    dreigannadoit.github.io/
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aint no way they this cute</title>
+    <link rel="icon" type="image/png" href="./img/logo-light.svg"/>
+
+    <!-- style -->
+    <link rel="stylesheet" href="./css/style.css" id="styleCSS">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/checklist.css">
+    <link rel="stylesheet" href="./css/other.css">
+
+    <!-- fonts and icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Thirs party libraries -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/lightbox.css">
+</head>
+<body id="body">
+    <div class="wrapper" id="wrapper">
+        <div class="checklist" id="checklist">
+            <div class="container">
+                <div class="head">
+                    <h1>TODO:</h1>
+                    <button id="exitTableIcon">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <table>
+                    <tr>
+                      <th>Step</th>
+                      <th>Task</th>
+                      <th><span id="secret">Status</span></th>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>a title</td>
+                        <td>Done</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>a header and a footer</td>
+                        <td>Done</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>at least two navigation button pointing to two different pages</td>
+                        <td>Done</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>at least two level headings</td>
+                        <td>Done</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>paragraph</td>
+                        <td>Done</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>list (ordered or unordered) with at least three list items</td>
+                        <td>Done</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>hyperlink to another web page</td>
+                        <td>Done</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>at least two image, one regular size, one small for a thumbnail</td>
+                        <td>Done</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>at least one image has a thumbnail (clickable image)</td>
+                        <td>Done</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>horizontal rule with the title at the top and at the bottom with author and modification date, at the bottom of the web page</td>
+                        <td>Done</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>at least one kind of normal text formatting (bold, italic or underline)</td>
+                        <td>Done</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>at least one table, with at least 3 columns and 3 rows</td>
+                        <td>Done</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>at least 5 attributes/properties to style your contents( ex. color, font style, size etc.)</td>
+                        <td>Done</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Click S̴̥͇̝̅̾̎͠t̶̝͑̇̓͘â̶̛͔͆̿t̵̠̠̲̥͒͐̂ű̷̫̝̼s̶̲͍̱̑̾͋̕</td>
+                        <td>F̸̡̛̲̪̞̯̬̜͔̙̰͋͌̌̀́́̕Í̴̛̛̞͉͍͂̅͋́͠Ń̵̖̈́̎̉D ̷̢͚̇̀M̷̛̰̖͎̺͓̠̝̼͓̐̊̚E̵̥̩̓͆</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="nav" id="nav">
+            <div class="nav_container">
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="logo.img">
+                </div>
+
+                <div class="title">
+                    <span id="titleHead">Drei Abmab</span>
+                    <hr>
+                </div>
+                
+                <div class="ham">
+                    <div class="ham_container" id="openMenu">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="backdrop"></div>
+            <nav class="nav_menu">
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <h1>Nioce</h1>
+                        </li>
+                        <li>
+                            <a href="#body" onclick="openMenu()">Hero Page</a>
+                        </li>
+
+                        <li>
+                            <a href="#s3" onclick="openMenu()">Meet the Dogs</a>
+                        </li>
+
+                        <li>
+                            <a href="#s4" onclick="openMenu()">Meet the Owner</a>
+                        </li>
+
+                        <li>
+                            <a href="#s5" onclick="openMenu()">Gallery</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="links">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=robertandrei.bamba@g.msuiit.edu.ph&su=SUBJECT&body=BODY" target="_blank">Email</a>
+                    <a href="https://www.facebook.com/drei.abmab" target="_blank">Facebook</a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="content" id="content">
+            <header class="s1" id="s1">
+                <h2 id="s1-h2-1">The</h2>
+                <h1 id="s1-h">
+                    <span class="typed-text"></span><span class="cursor-load blink">&nbsp;</span>
+                </h1>
+                <h2 id="s1-h2-2">DOGS EVER</h2>
+                <br>
+                <p id="s1-p"><span>See and Learn About Our Amazing dogs</span></p>
+                <span class="indicator" id="tableTip">Tip: Click "Drei Abmab"</span>
+            </header>
+
+            <section class="s2" id="s2">
+                <div class="intro" id="intro">
+                    <video autoplay muted loop id="myVideo">
+                        <source src="./img/intro3.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+            </section>
+
+            <section class="s3" id="s3">
+                <div class="s3-content">
+
+                    <div class="title-container">
+                        <div class="title">
+                            <h1>MEET THE</h1>
+                            <h1>DOGGOS</h1>
+                            <h5>(Hover over images)</h5>
+                        </div>
+                        <div class="sub">
+                            <p>The best of the best</p>
+                            <p>DOGGOS in the world</p>
+                        </div>
+                    </div>
+                    
+                    <div class="main">
+
+                        <div class="card-container">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="img">
+                                        <img src="./img/doggies/kenkneedy_9.jpg" alt="">
+                                    </div>
+
+                                    <div class="info">
+                                        <p>
+                                            <table>
+                                                <tr>
+                                                    <th>Name: </th>
+                                                    <td>Kennedy Bamba</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Age: </th>
+                                                    <td>13</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>DOT: </th>
+                                                    <td>2010</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Habbits: </th>
+                                                    <td>Bitting Leaves, Running, Napping</td>
+                                                </tr>
+                                            </table>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="bottom">
+                                    <p>Ken Ken</p>
+                                    <p><i>OCT 18, 23</i></p>
+                                </div>
+                            </div>
+
+                            
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="img">
+                                        <img src="./img/doggies/meg_8.jpg" alt="">
+                                    </div>
+
+                                    <div class="info">
+                                        <p>
+                                            <table>
+                                                <tr>
+                                                    <th>Name: </th>
+                                                    <td>Megan Meg Bamba</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Age: </th>
+                                                    <td>10</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>DOT: </th>
+                                                    <td>2013</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Habbits: </th>
+                                                    <td>Running, Rolling on the floor, Watching the Wall(scary)</td>
+                                                </tr>
+                                            </table>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="bottom">
+                                    <p>Megz</p>
+                                    <p><i>NOV 1, 23</i></p>
+                                </div>
+                            </div>
+                            
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="img">
+                                        <img src="./img/doggies/snow_1.jpg" alt="">
+                                    </div>
+
+                                    <div class="info">
+                                        <p>
+                                            <table>
+                                                <tr>
+                                                    <th>Name: </th>
+                                                    <td>Snow Bamba</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Age: </th>
+                                                    <td>10</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>DOT: </th>
+                                                    <td>2013</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Habbits: </th>
+                                                    <td>Asking for belly rubs, Running, Napping,Dancing</td>
+                                                </tr>
+                                            </table>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="bottom">
+                                    <p>Snowwy</p>
+                                    <p><i>NOV 1, 23</i></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="disc">
+                            <div class="text">
+                                <p><b>Meet Kennedy, Megan, and Snow!</b></p>
+                                <br>
+                                <p>Each with their unique charm, these <span>furballs</span> bring joy, loyalty, and a whole lot of wagging tails to our lives. Kennedy, the adventurer; Megan, the cuddle queen; and Snow, the playful fluff. Together, they make every day a paw-some journey!</p>
+                                </div>
+                            <div class="link">
+                                <a href="#s5">
+                                    See More Photos
+                                    <span>
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                        <i class="fa-solid fa-images"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="s4" id="s4">
+                <div class="s4-container">
+                    <div class="title-container">
+                        <div class="title">
+                            <h1>MEET THE</h1>
+                            <h1>AMAZING <span id="trigger">F</span>AMILY</h1>
+                            <h4 style="font-weight: 100;">* Meet the Bambas *</h4>
+                        </div>
+                        <div class="sub">
+                            <p>Providing</p>
+                            <p>over 2 years of</p>
+                            <p>love and care</p>
+                        </div>
+                    </div>
+
+                    <div class="about">
+                        <div class="text">
+                            <p>Meet the Bamba Family, a tight-knit crew radiating warmth and unity. From the spirited laughter of the kids to the wisdom shared by the elders, the Bambas embody love, resilience, and a zest for life. Whether sharing meals, stories, or simple moments, this family is a vibrant tapestry of shared experiences and unwavering support. In the Bamba household, each day is a new chapter in their heartwarming family story<span class="botdotbot"></span></p>
+
+                            <a href="./app.html">
+                                <span>Want More?</span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="imgs">
+                            <!-- Slider main container -->
+                            <div class="mySwiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <img src="./img/s4/1.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/s4/10.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/s4/7.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/s4/dad.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./img/s4/mom.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="s5" id="s5">
+                <div class="s5-container">
+                    <div class="column">
+                        <div class="img">
+                            <a 
+                                href="./img/doggies/kenkneedy_6.jpg" 
+                                data-lightbox="image-1" 
+                                data-title="Kennedy looking at a butterfly"
+                            >
+                                <img src="./img/doggies/kenkneedy_6.jpg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="img">
+                            <a 
+                                href="./img/doggies/kenkneedy_4.jpg" 
+                                data-lightbox="image-1" 
+                                data-title="Kennedy smilling for the camera"
+                            >
+                                <img src="./img/doggies/kenkneedy_4.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="img">
+                            <a
+                                href="./img/doggies/snow_7.jpg" 
+                                data-lightbox="image-1" 
+                                data-title="Snow Sleeping - Tired Baby"
+                            >
+                                <img src="./img/doggies/snow_7.jpg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="img">
+                            
+                            <a
+                                href="./img/doggies/meg_7.jpg" 
+                                data-lightbox="image-1" 
+                                data-title="Megan Relaxing on my lap"
+                            >
+                                <img src="./img/doggies/meg_7.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="img">
+                            <a 
+                                href="./img/doggies/snow_5.jpg" 
+                                data-lightbox="image-1" 
+                                data-title="Snow excited to play#1"
+                            >
+                                <img src="./img/doggies/snow_5.jpg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="img">
+                            <a 
+                                href="./img/doggies/snow_4.jpg" 
+                                data-lightbox="image-1" 
+                                data-title="Snow excited to play#2"
+                            >
+                                <img src="./img/doggies/snow_4.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="img">
+                            <a 
+                                href="./img/doggies/kenkneedy_1.jpg" 
+                                data-lightbox="image-1" 
+                                data-title="Kenedy the explorer"
+                            >
+                                <img src="./img/doggies/kenkneedy_1.jpg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="img">
+                            <a 
+                                href="./img/doggies/meg_4.jpg" 
+                                data-lightbox="image-1" 
+                                data-title="Megan assking for food"
+                            >
+                                <img src="./img/doggies/meg_4.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="img">
+                            <a 
+                                href="./img/doggies/kenkneedy_7.jpg" 
+                                data-lightbox="image-1" 
+                                data-title="Kenedy wants attention"
+                            >
+                                <img src="./img/doggies/kenkneedy_7.jpg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="img">
+                            <a 
+                                href="./img/doggies/meg_10.jpg" 
+                                data-lightbox="image-1" 
+                                data-title="AH ZABENYA!!"
+                            >
+                                <img src="./img/doggies/meg_10.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer id="footer">
+                <div class="footer-container">
+                   <div class="footer-nav">
+                        <ul>
+                            <li><a href="#s1">hero page</a></li>
+                            <li><a href="#s3">meet the dogs</a></li>
+                            <li><a href="#s4">meet the owners</a></li>
+                            <li><a href="#s5">gallery</a></li>
+                            <li><a href="./app.html">Meet the Fam</a></li>
+                        </ul>
+                   </div>
+
+                   <div class="mid">
+                        <div class="about">
+                            <div class="con">
+                                <h1>Meet the Doggos</h1>
+                                <p>
+                                    Each with their unique charm, these furballs bring joy, loyalty, and a whole lot of wagging tails to our lives
+                                    <span class="botdotbottwo"></span>
+                                </p>
+                            </div>
+
+                            <div class="link">
+                                <a href="#s3">
+                                    Read More
+                                    <div>
+                                        <i class="fa-solid fa-sort-up"></i>
+                                        <i class="fa-solid fa-sort-up"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="logo">
+                            <img src="./img/logo-light.svg" alt="">
+                            <h1>DREI ABMAB</h1>
+                        </div>
+                   </div>
+
+                    <hr>
+                   <div class="bottom">
+                        <div class="socials">
+                            <a href="https://www.linkedin.com/in/robert-a-b-3b56311ab/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/drei.abmab"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://youtu.be/ExgiUAlb8NQ"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+
+                        <div class="details">
+                            <p>Lanao Del Norte, PH</p>
+                            <p>NOV 22, 2023</p>
+                        </div>
+
+                        <div class="mail">
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=robertandrei.bamba@g.msuiit.edu.ph&su=SUBJECT&body=BODY">robertandrei.bamba@g.msuiit.edu.ph</a>
+                        </div>
+
+                        <div class="name">
+                            <p>Robert Andrei N. Bamba</p>
+                        </div>
+                   </div>
+                </div>
+            </footer>
+        </div>
+        
+        <div class="restart" id="restart">
+           <a href="#body">
+                <i class="fa-solid fa-circle-up"></i>
+                <i class="fa-solid fa-circle-up"></i>
+            </a> 
+        </div>
+    </div>
+    
+    <div class="foxy" id="foxy">
+        <audio id="audio">
+            <source src="./img/fnaf-jumpscare-sound.mp3" type="audio/mp3">
+        </audio>
+    </div>
+
+    <div class="cursor"></div>
+    
+    <!-- Scripts -->
+    <script src="./js/foxy.js"></script>
+    <script src="./js/lightbox-plus-jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/cursor.js"></script>
+    <script src="./js/type.js"></script>
+    <script src="./js/slidder.js"></script>
+    
+    <script src="./js/index.js"></script>
+    <script>
+        function defaultsize() {
+            intro_video.style.width = `${introDefaultSize}%`;
+            intro_video.style.height = `${introDefaultSize}%`;
+        }
+    </script>
+
+    <script src="./js/nav.js"></script>
+    <script src="./js/table.js"></script>
+    <script src="./js/lightbox.js"></script>
+</body>
+</html>

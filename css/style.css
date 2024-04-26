@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 500ms ease;
+}
+
+:root{
+    --background-light-color: #fafaf2;
+    --background-light-color-trans: #fafaf2bb;
+    --dark-color: #04364A;
+    --main-color: #176B87;
+    --secondary-color: #80d4cf;
+    --gold-color: #C2A03D;
+    --grey-color: #282726;
+    --secondary-font: 'Cormorant', serif;
+    --primary-font: 'Montserrat', sans-serif;
+
+    --h1-size:calc(30.507042253521128px + 3.731455399061033vw);
+    --h3-size:calc(29.070422535211268px + 1.314553990610329vw);
+    --p-size: calc(13.943661971830986px + .28169014084507vw);
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background: #c4c4c4; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-color); 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    height: calc(100dvh);
+    width: calc(100dvw - 15px);
+    overflow-x: hidden;
+    background: var(--background-light-color);
+    font-family: var(--primary-font);
+    transition: all 500ms ease;
+
+    cursor: none;
+}
+
+
+
+body.s3-active{
+    background: var(--dark-color);
+}
+
+body.s4-active{
+    background: var(--secondary-color);
+}
+
+
+
+.wrapper{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.content{
+    position: relative;
+    top: 15%;
+    height: 100%;
+    width: 100%;
+}
+
+header,
+section,
+footer{
+    position: relative; 
+    height: 100%;
+    width: 100%;
+}
+
+/* My Brain is not braining right now. What am I even doing? */
+
+a:hover{
+    cursor: none;
+}
+
+.cursor {
+    z-index: 99999999999999999999999999;
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+}
+
+.cursor::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border: 8px solid gray;
+    border-radius: 50%;
+    opacity: .5;
+    top: -8px;
+    left: -8px;
+    animation: cursorAnim2 .5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.9);
+    }
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+@keyframes cursorAnim4 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(3);
+    }
+}
+
+@keyframes cursorAnim5 {
+    0% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.cursor.expand {
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid red;
+}
+
+.cursor.link-hover{
+    animation: cursorAnim4 .2s forwards;
+}
+
+.cursor.link-out{
+    animation: cursorAnim5 .2s forwards;
+}
+
